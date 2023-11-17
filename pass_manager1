@@ -1,0 +1,12 @@
+#!/bin/dash
+
+echo "パスワードマネージャーにようこそ！"
+read -p "サービス名を入力してください:" service
+read -p "ユーザー名を入力してください:" user
+read -p "パスワードを入力してください:" pass
+
+
+echo "サービス名:"$service "ユーザー名:"$user "パスワード:"$pass  >> pass_save
+
+#入力が完了したら
+echo "Thank you!"
